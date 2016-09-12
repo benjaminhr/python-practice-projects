@@ -23,3 +23,5 @@ print formatter % (
     "But it didn't sing.",
     "So I said goodnight."
 )
+
+#Note-to-self: when using a string with %r, it will print with single quotes
