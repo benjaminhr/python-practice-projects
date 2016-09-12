@@ -25,3 +25,19 @@ print formatter % (
 )
 
 #Note-to-self: when using a string with %r, it will print with single quotes
+
+#---------------------------------------------------------
+
+#More printing practice, "\n" creates a new line
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApril\nMay\nJun\nJul\nAug"
+
+#Using "%r" won't print with new lines
+print "Here are the days: ", days
+print "Here are the months: ", months
+
+#Multiline string prints
+print """
+Triple quotes after a print allows us to do multi-line
+comments or strings :-)
+"""

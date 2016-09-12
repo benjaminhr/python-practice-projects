@@ -1,10 +1,19 @@
-#More printing practice
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "Jan\nFeb\nMar\nApril\nMay\nJun\nJul\nAug"
+#Backslash escapes quotes that are using within the string
+print "I am \"sarcastic\" often."
 
-print "Here are the days: ", days
-prints "Here are the months: ", months
+#"\t"
+cat = "\t I'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
 
-print """
-Triple quotes are multi-line comments ;)
+fat_cat = """
+I'll do a list:
+\t* cat food
+\t* fishes
+\t* catnip\n\t* Grass
 """
+
+print cat
+print persian_cat
+print backslash_cat
+print fat_cat
