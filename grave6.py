@@ -18,9 +18,10 @@ if name == "ben":
 else:
     print "You are the wrong one."
 
-#Converting raw_input into string
+#Converting raw_input into integer
 usr_age = int(raw_input('How old are you? '))
 
+#Taking raw_input and checking the integer and printing if it is a certain value
 if usr_age < 5:
     print "You are old."
 elif usr_age == 7:
