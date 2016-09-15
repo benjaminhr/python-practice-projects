@@ -1,7 +1,3 @@
-from sys import argv
+benjamin = "Hello my name is benjamin"
 
-name, age, height = argv
-
-print "Your name is: ", name
-print "Your age is: ", age
-print "Your height is: ", height
+print " ".join(str.split()[::-1])
