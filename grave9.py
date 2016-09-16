@@ -9,6 +9,8 @@ txt = open(filename)
 print "Here is your file: %r" % (filename)
 #Reads the contents of the txt file
 print txt.read()
+#Closes file
+txt.close()
 
 #Asks for filename again with prompt + raw_input
 print "Type the filename again: "
@@ -18,3 +20,5 @@ file_again = raw_input("> ")
 txt_again = open(file_again)
 
 print txt_again.read()
+#Closes file
+txt_again.close()
