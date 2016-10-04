@@ -26,7 +26,7 @@ line3 = raw_input("Line3: ")
 print "I'm going to write these to the file."
 
 #User raw_input from lines 22-24 put into txt file
-target.write('%s \n %s \n %s \n' % (line1,line2,line3))
+target.write('%s\n%s\n%s\n' % (line1,line2,line3))
 #Most importantly, closing the file
 print "And finally, we close it."
 target.close()
