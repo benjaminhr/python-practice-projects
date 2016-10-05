@@ -3,10 +3,7 @@
 >functions name code, whilst variables name strings or numbers
 >they accept arguments
 '''
-def print_two(*args):
-    arg1, arg2 = args
-    print "arg1: %r, arg2: %r" % (arg1, arg2)
-
+#Takes two arguments, uses them in string formatting
 def print_two_again(arg1, arg2):
     print "arg1: %r, arg2: %r" % (arg1, arg2)
 
