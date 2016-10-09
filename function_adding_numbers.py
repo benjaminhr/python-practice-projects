@@ -17,15 +17,14 @@ def main(start):
         raw_input("> ")
 
         #Asks for numbers and adds to variable
-        numbers1 = int(raw_input('Number 1: '))
-        numbers2 = int(raw_input('Number 2: '))
+        numbers1 = int(float(raw_input('Number 1: ')))
+        numbers2 = int(float(raw_input('Number 2: ')))
 
         #Function takes two numbers and adds them
         def addition(numb1, numb2):
             answer = numbers1 + numbers2
             #Prints the result
             print "%r + %r = %r \n" % (numb1, numb2, answer)
-
         #Calls the function
         addition(numbers1, numbers2)
 
@@ -36,7 +35,7 @@ def main(start):
         raw_input("> ")
 
         #Creates variable for number
-        numbers3 = int(raw_input('What number would you like to multiply by: '))
+        numbers3 = float(int(raw_input('What number would you like to multiply by: ')))
 
         #Function for multiplication
         def multiplication(numb3):

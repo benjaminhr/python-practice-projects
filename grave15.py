@@ -31,7 +31,9 @@ iq = divide(100,2)
 print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
 
 #Using variables in functions
-what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+what = add(, subtract(height, multiply(weight, divide(iq, 2))))
+#Otherwise prints final operation and not answer
+result_of_what = what
 
 #Prints above variable
-print "That becomes: ", what, "Can do you do it by hand?"
+print "That becomes: ", result_of_what, "Can do you do it by hand?"
