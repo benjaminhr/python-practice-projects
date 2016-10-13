@@ -63,7 +63,7 @@ def main(start):
                 execfile("function_adding_numbers.py")
             else:
                 #Exits program
-                sys.exit("Program closing... 0")
+                sys.exit("Program closing... ")
         restart(option)
 #Calls function main
 main(start)
