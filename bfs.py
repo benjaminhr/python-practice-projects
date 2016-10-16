@@ -22,11 +22,12 @@ def breadth_first_search(graph, start, end):
         #If path found return the path to that node
         if node == end:
             return path
-        #Calculates for all adjacent nodes, construct a new path and push it into the queue
+        #Calculates for all adjacent nodes
+        #Construct a new path and push it into the queue
         for adjacent in graph.get(node, []):
             new_path = list(path)
             new_path.append(adjacent)
             queue.append(new_path)
 
 #Returns shortest path from node '1' to node '3'
-print breadth_first_search(graph, '1', '3')
+print breadth_first_search(graph, '1', '7')
