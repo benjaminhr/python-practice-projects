@@ -1,8 +1,7 @@
 import sys
 import os
 
-start = ""
-def main(start):
+def main():
     #while loop used for restarting script
     while True:
         #Asks the user if they would like to add two numbers
@@ -35,7 +34,7 @@ def main(start):
         raw_input("> ")
 
         #Creates variable for number
-        numbers3 = float(int(raw_input('What number would you like to multiply by: ')))
+        numbers3 = int(raw_input('What number would you like to multiply by: '))
 
         #Function for multiplication
         def multiplication(numb3):
@@ -66,4 +65,4 @@ def main(start):
                 sys.exit("Program closing... ")
         restart(option)
 #Calls function main
-main(start)
+main()
