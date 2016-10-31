@@ -41,28 +41,36 @@ def sign_up():
             #Stops sign_up while loop
             return False
 
+#Stores username and password in dictionary
 def store():
+    #assigns variable to global so that it can be used outside of funct
     global user_pass
+    #Dictionary
     user_pass = {}
 
+    #Updates dictionary with new pass and username
     user_pass.update({user_name:password})
-    pprint.pprint(user_pass)
+    #With "pprint" prints each line of the dictionary individually
+    #pprint.pprint(user_pass)
 
+#Signs in user
 def sign_in():
-    print """ \n
+    print """
     ------------------------------------------
     |                                        |
     |    Sign in with your new account!      |
     |                                        |
     ------------------------------------------
     """
-
+    #Loops login for incorrect username+password
     while True:
+        #Asks for username+password
         enter1 = raw_input("| Username: ")
         print "-----------------------"
         enter2 = getpass.getpass("| Password: ")
         print "-----------------------"
 
+        #Checks dictionary if username equals password
         if user_pass.get(enter1) == enter2:
             print """
 
@@ -75,11 +83,16 @@ def sign_in():
             ||     ||
                 """
             return False
+        #If wrong, loops runs again
         else:
             print "----------------"
             print "Incorrect username or password, try again!"
             print "----------------"
 
-sign_up()
-store()
-sign_in()
+#Calls functions
+def call ():
+    sign_up()
+    store()
+    sign_in()
+
+call()
